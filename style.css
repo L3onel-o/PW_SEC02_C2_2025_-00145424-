@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -23,10 +22,16 @@ header p {
   padding: 20px;
 }
 
+
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.row.stacked {
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .column {
@@ -38,17 +43,22 @@ header p {
 .column h2 {
   font-size: 28px;
   margin-bottom: 10px;
+  color: black;
+
 }
 
 .column p {
   font-size: 16px;
   line-height: 1.5;
+  color: black;
+
 }
 
 footer {
   background-color: #3e82f0;  
   color: white;
   padding: 30px 20px;
+  text-align: left;
 }
 
 footer .footer-title {
@@ -60,4 +70,35 @@ footer .footer-title {
 footer p:last-child {
   margin: 10px 0 0 0;
   font-size: 18px;
+}
+
+.footer-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: white;
+  color: #4e8ef7;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-buttons button:hover {
+  background-color: #dbe6ff;
+}
+
+#image-container img {
+  margin-top: 20px;
+  max-width: 200px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

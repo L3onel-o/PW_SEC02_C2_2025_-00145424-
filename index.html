@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-    <title>Parcial 1</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Parcial 1</title>
 </head>
 <body>
 <div id="wrap" class="wrap">
        <header>
-        <h1>University Demo</h1>
+        <!--Por header entendi este texto, espero sea este y no el titulo de arriba-->
+        <h1 id="header-title">University Demo</h1>
         <p>Resize this responsive page!</p>
       </header>
 
       <main class="content">
-        <div class="row"> <!--Row es una fila, espero que no haya problema al agregarlo en ingles graciass-->
+  <div class="row" id="row-container"> <!--Row es una fila, espero que no haya problema al agregarlo en ingles graciass-->
           <div class="column">
             <h2>London</h2>
             <p>London is the capital city of England.</p>
@@ -53,10 +53,18 @@
       <footer>
         <p class="footer-title">Footer Demo</p>
         <p>footer example demo!</p>
+        <div class="footer-buttons">
+          <button onclick="toggleLayout()">Ordenar en filas</button>
+          <button onclick="changeHeaderTitle()">Cambiar título header</button>
+          <button onclick="changeColors()">Cambiar colores secciones</button>
+          <button onclick="addImage()">Agregar imagen al footer</button>
+        </div>
         <div id="image-container"></div>
       </footer>
+
     </div>
     </div>
       
 </body>
+<script src="./script.js"></script>
 </html>
